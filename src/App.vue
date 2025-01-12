@@ -1,24 +1,25 @@
 <template>
-  <v-app class="background-gif">
+  <div>
     <Header />
-    <v-main>
-      <router-view />
-    </v-main>
+    <router-view />
     <Footer />
-  </v-app>
+  </div>
 </template>
 
 <script setup>
-import Header from "./components/Header.vue";
-import Footer from "./components/Footer.vue";
+import Header from './components/Header.vue';
+import Footer from './components/Footer.vue';
 </script>
 
 <style>
-.background-gif {
-  background-image: url('./assets/background.gif');
-  background-size: cover;
-  background-position: center;
+body {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif; 
+  color: white;
+  background-image: url('/src/assets/background.gif'); 
   background-repeat: no-repeat;
-  min-height: 100vh;
+  background-position: center;
+  background-size: cover; 
+  height: 100vh; 
 }
 </style>
