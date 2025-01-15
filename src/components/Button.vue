@@ -1,7 +1,7 @@
 <template>
   <v-btn
-    @click="scrollToTarget"
-    class="text-white futuristic-btn py-3 px-8 rounded-lg font-bold uppercase tracking-wide shadow-lg transition-all duration-300 ease-in-out  mt-4"
+    @click="handleClick"
+    class="text-white futuristic-btn py-3 px-8 rounded-lg font-bold uppercase tracking-wide shadow-lg transition-all duration-300 ease-in-out mt-4"
     elevation="3"
   >
     {{ text }}
@@ -10,6 +10,7 @@
 
 <script setup>
 import { defineProps } from 'vue';
+import { useRouter, useRoute } from 'vue-router';
 
 const props = defineProps({
   text: {
@@ -22,10 +23,17 @@ const props = defineProps({
   },
 });
 
-const scrollToTarget = () => {
-  const targetElement = document.getElementById(props.target);
-  if (targetElement) {
-    targetElement.scrollIntoView({ behavior: 'smooth' });
+const router = useRouter();
+const route = useRoute();
+
+const handleClick = () => {
+  if (route.name === props.target) {
+    const targetElement = document.getElementById(props.target);
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: 'smooth' });
+    }
+  } else {
+    router.push({ name: props.target });
   }
 };
 </script>
@@ -33,9 +41,9 @@ const scrollToTarget = () => {
 <style scoped>
 .futuristic-btn {
   background: linear-gradient(45deg, #131313, #8f7df0);
-  min-width: 200px; 
+  min-width: 200px;
   display: flex;
-  transition: all 0.3s ease; 
+  transition: all 0.3s ease;
 }
 
 .futuristic-btn:hover {

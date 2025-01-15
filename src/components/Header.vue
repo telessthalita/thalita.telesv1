@@ -1,19 +1,18 @@
 <template>
   <div>
-    <div class="d-flex justify-space-between mt-8">
+    <div class="d-flex justify-space-between ">
       <router-link to="/" class="w-2 h-4 ml-16">
-        <img src="/src/assets/icone.jpeg" alt="Profile Image" class="w-2 h-4" />
       </router-link>
 
-      <div class="d-flex justify-center mt-8">
-        <NavButton class="text-white mr-4" text="About" target="about" />
-        <NavButton class="text-white mr-4" text="Projects" target="projects" />
-        <NavButton class="text-white mr-4" text="Contact" target="contact" />
+      <div class="d-flex justify-center mt-4 mb-4">
+        <Button class="text-white mr-4" text="About" target="About" />
+        <Button class="text-white mr-4" text="Projects" target="Projects" />
+        <Button class="text-white mr-4" text="Contacts" target="Contacts" />
       </div>
     </div>
   </div>
 </template>
 
 <script setup>
-import NavButton from './NavButton.vue';
+import Button from './Button.vue';
 </script>
