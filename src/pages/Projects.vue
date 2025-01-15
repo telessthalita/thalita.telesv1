@@ -1,8 +1,6 @@
 <template>
     <div class="projects-page page px-8 py-16">
-      <h1 class="text-4xl font-bold text-gradient uppercase mb-12 text-center">
-        Projects
-      </h1>
+     
   
       <v-container>
         <v-row justify="center" align="start" class="gap-8">

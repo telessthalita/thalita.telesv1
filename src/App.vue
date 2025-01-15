@@ -28,7 +28,7 @@ const leave = (el, done) => {
 
 <style>
 body {
-  margin-bottom: 4rem;
+  margin-bottom: rem;
   font-family: 'Orbitron', sans-serif;
   color: white;
   background-image: url('/src/assets/background.gif');

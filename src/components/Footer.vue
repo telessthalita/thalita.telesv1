@@ -1,29 +1,10 @@
 <template>
   <footer class="footer">
-    <div class="social-links">
-      <a
-        v-for="item in items"
-        :key="item.title"
-        :href="item.href"
-        :title="item.title"
-        class="social-link"
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        <i :class="item.icon"></i>
-      </a>
-    </div>
-
     <div class="copyright">
       Developed by <strong>Thalita Teles</strong> and <strong>Friday</strong>, its Artificial Intelligence.
     </div>
   </footer>
 </template>
-
-<script setup>
-
-</script>
-
 <style scoped>
 .footer {
   background-color: #000000; 
@@ -31,9 +12,12 @@
   font-size: 12px;
   text-align: center;
   padding: 16px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  position: fixed; 
+  bottom: 0; 
+  width: 100%; 
+  z-index: 1000; 
+}
+.copyright {
+  margin-top: 8px;
 }
 </style>

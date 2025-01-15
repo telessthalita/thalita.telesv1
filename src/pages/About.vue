@@ -1,11 +1,10 @@
 <template>
-  <div class="about-page page d-flex flex-col items-center justify-center px-8 py-16 mt-14">
-    <div class="text-4xl font-bold text-gradient uppercase mb-8">
+  <div class="about-page page d-flex flex-col items-center justify-center px-8 py-16">
+    <div class="text-4xl font-bold text-gradient uppercase ">
       About TT
     </div>
 
     <v-container>
-      <h1 class="text-center">About TT</h1>
       <v-row justify="space-between" align="center" class="gap-8">
         <v-col cols="12" md="4" class="text-center">
           <h2 class="text-lg font-semibold text-pink-400 mb-4">Who Am I?</h2>
@@ -44,6 +43,7 @@
 .page {
   background: linear-gradient(to right, #131313, #1d1d3b);
   color: white;
+  
 }
 
 .text-gradient {

@@ -1,5 +1,5 @@
 <template>
-  <div class="contacts-page page px-8 py-16 mt-14">
+  <div class="contacts-page page px-8 py-16 ">
     <h1 class="text-4xl font-bold text-gradient uppercase mb-8 text-center">
       Contacts
     </h1>
@@ -17,7 +17,7 @@
         <v-card-text class="space-y-4">
           <div class="text-xl font-semibold">SOCIAL</div>
           <div class="text-lg text-pink-400">
-            telessthalita (Thalita Teles)
+            <a href="https://github.com/telessthalita" target="_blank" rel="noopener noreferrer">GitHub</a>
           </div>
         </v-card-text>
       </v-card>
@@ -29,6 +29,9 @@
 .contacts-page {
   background: linear-gradient(to right, #131313, #1d1d3b);
   color: #fff;
+  min-height: 70vh; 
+  background-size: 150% 150%; 
+  background-position: center center; 
 }
 
 .text-gradient {
@@ -46,5 +49,15 @@
 .contact-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5);
+}
+
+a {
+  color: #4e398a;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #863be9;
 }
 </style>
