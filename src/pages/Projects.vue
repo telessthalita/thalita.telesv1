@@ -1,83 +1,84 @@
 <template>
-    <div class="projects-page page px-8 py-16">
-     
-  
-      <v-container>
-        <v-row justify="center" align="start" class="gap-8">
-          <v-col cols="12" md="4" v-for="project in projects" :key="project.id">
-            <div class="project-card">
-              <div class="card-inner">
-                <div class="card-front">
-                  <v-img
-                    :src="project.image"
-                    :alt="project.title"
-                    class="project-image"
-                  ></v-img>
-                  <v-card-text class="text-center">
-                    <h2 class="text-lg font-bold text-pink-400">{{ project.title }}</h2>
-                    <p>{{ project.shortDescription }}</p>
-                  </v-card-text>
-                </div>
-                <div class="card-back">
-                  <v-card-text class="text-center">
-                    <h2 class="text-lg font-bold text-pink-400">{{ project.title }}</h2>
-                    <p>{{ project.fullDescription }}</p>
-                    <Button text="Learn More" :href="project.link" target="_blank" class="mt-4">
-                      
-                    </Button>
-                  </v-card-text>
-                </div>
+  <div class="projects-page page px-8 py-16">
+    <v-container>
+      <v-row justify="center" align="start" class="gap-8">
+        <!-- Modificando para exibir 4 projetos em uma fileira -->
+        <v-col cols="12" sm="6" md="3" v-for="project in projects" :key="project.id">
+          <div class="project-card">
+            <div class="card-inner">
+              <div class="card-front">
+                <v-img :src="project.image" :alt="project.title" class="project-image"></v-img>
+                <v-card-text class="text-center">
+                  <h2 class="text-lg font-bold text-pink-400">{{ project.title }}</h2>
+                  <p>{{ project.shortDescription }}</p>
+                </v-card-text>
+              </div>
+              <div class="card-back">
+                <v-card-text class="text-center">
+                  <h2 class="text-lg font-bold text-pink-400">{{ project.title }}</h2>
+                  <p>{{ project.fullDescription }}</p>
+                  <v-btn text :href="project.link" target="_blank" class="mt-4">
+                    Learn More
+                  </v-btn>
+               </v-card-text>
               </div>
             </div>
-          </v-col>
-        </v-row>
-      </v-container>
-    </div>
-  </template>
-  
-  <script setup>
-  import { ref } from 'vue';
-  import Button from '@/components/Button.vue';
-  
-  const projects = ref([
-    {
-      id: 1,
-      title: "MoodTunes",
-      image: "/src/assets/moodtunes.png",
-      shortDescription: "A chatbot that understands your mood and creates playlists.",
-      fullDescription:
-        "A chatbot that uses AI to understand your mood and generate personalized playlists to improve your day.",
-      link: "https://example.com/moodtunes",
-    },
-    {
-      id: 2,
-      title: "RaceTrack Liv",
-      image: "/src/assets/racetrack.png",
-      shortDescription: "Track Formula 1 live with real-time data and comparisons.",
-      fullDescription:
-        "Get live updates on Formula 1 races with dynamic data, charts, and real-time comparisons of drivers and teams.",
-      link: "https://example.com/racetrackliv",
-    },
-    {
-      id: 3,
-      title: "DreamFrames",
-      image: "/src/assets/dreamframes.png",
-      shortDescription: "Explore AI-generated digital art in an interactive gallery.",
-      fullDescription:
-        "Discover unique, AI-generated digital artwork. Customize and interact with cutting-edge creations in real-time.",
-      link: "https://example.com/dreamframes",
-    },
-  ]);
-  </script>
-  
-  <style scoped>
+          </div>
+        </v-col>
+      </v-row>
+    </v-container>
+  </div>
+</template>
+
+<script setup>
+import { ref } from 'vue';
+import Button from '@/components/Button.vue';
+
+const projects = ref([
+  {
+    id: 1,
+    title: "MoodTunes",
+    image: "/src/assets/moodtunes.png",
+    fullDescription:
+      "AI Chatbot that creates personalized playlists based on the user's mood.",
+    link: "https://example.com/moodtunes",
+  },
+  {
+    id: 2,
+    title: "RaceTrack",
+    image: "/src/assets/dreamframes.png",
+    fullDescription:
+      "Front-end application consuming an API to provide real-time race stats, driver performance, and team comparisons for F1 fans.",
+    link: "https://example.com/racetrackliv",
+  },
+  {
+    id: 3,
+    title: "DreamFrames",
+    image: "/src/assets/racetrack.png",
+    fullDescription:
+      "Explore and interact with unique AI-generated artwork in an immersive, customizable gallery.",
+    link: "https://example.com/dreamframes",
+  },
+  {
+    id: 4,
+    title: "SpotifyClone",
+    image: "/src/assets/scopify.jpeg",
+    fullDescription:
+      "A project replicating Spotify's core functionality, including music streaming.",
+    link: "https://spotify-ykmg.onrender.com/",
+  }
+]);
+</script>
+
+<style scoped>
 .project-card {
   perspective: 1000px;
   width: 100%;
-  height: 350px;
+  height: 340px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
+ 
 }
 
 .card-inner {
@@ -117,7 +118,7 @@
 }
 
 .project-image {
-  height: 250px;
+  height: 282px;
   object-fit: cover;
   border-radius: 16px;
   overflow: hidden;

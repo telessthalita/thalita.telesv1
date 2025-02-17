@@ -28,7 +28,7 @@
 <style scoped>
 .contacts-page {
   background: linear-gradient(to right, #131313, #1d1d3b);
-  color: #fff;
+
   min-height: 70vh; 
   background-size: 150% 150%; 
   background-position: center center; 
@@ -36,7 +36,7 @@
 
 .text-gradient {
   background: linear-gradient(to right, #863be9, #4e398a);
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: white;
 }
 
 .contact-card {
