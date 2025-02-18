@@ -14,8 +14,26 @@
   </script>
   
   <style scoped>
+.home-page {
+  padding: 2rem;
+}
+
+@media (min-width: 600px) {
+  .home-page {
+    padding: 4rem;
+  }
+}
+
+@media (min-width: 960px) {
+  .home-page {
+    padding: 6rem;
+  }
+}
+
+@media (min-width: 1280px) {
   .home-page {
     padding: 10rem;
   }
-  </style>
+}
+</style>
   
