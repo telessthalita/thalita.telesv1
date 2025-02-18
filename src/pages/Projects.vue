@@ -49,14 +49,14 @@ const projects = ref([
     image: "/src/assets/dreamframes.png",
     fullDescription:
       "Front-end application consuming an API to provide real-time race stats, driver performance, and team comparisons for F1 fans.",
-    link: "https://example.com/racetrackliv",
+    link: "https://race-track.onrender.com/",
   },
   {
     id: 3,
-    title: "DreamFrames",
+    title: "NeuroGallery",
     image: "/src/assets/racetrack.png",
     fullDescription:
-      "Explore and interact with unique AI-generated artwork in an immersive, customizable gallery.",
+      "Dynamic 3D gallery that visually evolves through human interactions and machine learning, combining generative art, gamification, and intelligent curation.",
     link: "https://example.com/dreamframes",
   },
   {
