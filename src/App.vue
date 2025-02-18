@@ -31,7 +31,7 @@ body {
   margin-bottom: rem;
   font-family: 'Orbitron', sans-serif;
   color: white;
-  background-image: url('/src/assets/background.gif');
+  background-image: url('/assets/background.gif');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
