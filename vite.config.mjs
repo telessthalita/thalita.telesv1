@@ -62,8 +62,12 @@ export default defineConfig({
     ],
   },
   server: {
-    port: 3000,
+    watch: process.env.NODE_ENV === 'development' ? {
+      usePolling: true,
+      interval: 1000,
+    } : undefined,
   },
+  
   css: {
     preprocessorOptions: {
       sass: {
