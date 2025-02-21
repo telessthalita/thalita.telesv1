@@ -1,35 +1,100 @@
 <template>
-  <div class="about-page page d-flex flex-col items-center justify-center px-8 py-16">
-    <div class="text-4xl font-bold text-gradient uppercase ">
-      About TT
-    </div>
-
+  <div class="about-page page px-8 py-16">
     <v-container>
-      <v-row justify="space-between" align="center" class="gap-8">
-        <v-col cols="12" md="4" class="text-center">
-          <h2 class="text-lg font-semibold text-pink-400 mb-4">Who Am I?</h2>
-          <p class="text-sm leading-relaxed">
-            I am a FullStack developer driven by curiosity and a passion for creation. 
-            I consider myself an explorer, whether it's unraveling lines of code, seeking balance in my routine, or venturing into the unknown. 
-            I have been called the "Goddess of Technology," a title that reflects the deep connection I have with what I do. 
-            I work with authenticity, innovation, and a constant focus on making a positive impact through technology.
-          </p>
+      <v-row justify="center" align="start" class="gap-8">
+        <v-col cols="12" sm="6" md="3">
+          <div class="card">
+            <div class="card-inner">
+              <div class="card-front">
+                <v-card-text class="text-center">
+                  <h2 class="text-lg font-bold text-pink-400">Level Up in Technology</h2>
+                </v-card-text>
+              </div>
+              <div class="card-back">
+                <v-card-text class="text-justify">
+                  <p>
+                    Technology has always been my refuge—a place where I challenge myself and grow. From games to
+                    coding, I developed logic, strategy, and adaptability. Every challenge has shaped me into a
+                    problem-solver, always seeking innovative solutions
+                  </p>
+                </v-card-text>
+              </div>
+            </div>
+          </div>
         </v-col>
 
-        <v-col cols="12" md="4" class="text-center">
-          <h2 class="text-lg font-semibold text-pink-400 mb-4">My Interests</h2>
-          <p class="text-sm leading-relaxed">
-            Technology is my greatest passion, especially in areas like artificial intelligence, data engineering, software engineering, automation, and management. 
-            I love exploring innovative solutions that transform ideas into realities and shape the future.
-          </p>
+        <v-col cols="12" sm="6" md="3">
+          <div class="card">
+            <div class="card-inner">
+              <div class="card-front">
+                <v-card-text class="text-center">
+                  <h2 class="text-lg font-bold text-pink-400">My Skills</h2>
+                </v-card-text>
+              </div>
+              <div class="card-back">
+                <v-card-text class="text-center">
+                  <div class="skills-grid">
+                    <div class="skill">JavaScript</div>
+                    <div class="skill">Python</div>
+                    <div class="skill">SQL</div>
+                    <div class="skill">React</div>
+                    <div class="skill">AI Fundamentals</div>
+                    <div class="skill">Agile Methodologies</div>
+                  </div>
+                </v-card-text>
+              </div>
+            </div>
+          </div>
         </v-col>
 
-        <v-col cols="12" md="4" class="text-center">
-          <h2 class="text-lg font-semibold text-pink-400 mb-4">What Drives Me</h2>
-          <p class="text-sm leading-relaxed">
-            I am motivated by challenges that allow me to grow and continuously learn. 
-            For me, every project is an opportunity to experiment, collaborate, and create something that has a real and lasting impact.
-          </p>
+        <v-col cols="12" sm="6" md="3">
+          <div class="card">
+            <div class="card-inner">
+              <div class="card-front">
+                <v-card-text class="text-center">
+                  <h2 class="text-lg font-bold text-pink-400">My Purpose</h2>
+                </v-card-text>
+              </div>
+              <div class="card-back">
+                <v-card-text class="text-justify">
+                  <p>
+                    Technology has the power to transform realities.
+                    I want to continue creating innovative solutions that drive businesses forward and impact lives.
+                    Growing, learning, and building the future—one line of code at a time.
+                  </p>
+                </v-card-text>
+              </div>
+            </div>
+          </div>
+        </v-col>
+
+        <v-col cols="12" sm="6" md="3">
+          <div class="card contact-card">
+            <div class="card-inner">
+              <div class="card-front">
+                <v-card-text class="text-center">
+                  <h2 class="text-lg font-bold text-pink-400">Let's Connect!</h2>
+                </v-card-text>
+              </div>
+              <div class="card-back">
+                <v-card-text class="text-justify">
+                  <p>
+                    If you share this vision and want to exchange ideas, my DM is always open!
+                  </p>
+                  <div class="contact-info mt-4">
+                    <p> +55 (79) 99905-8123</p>
+                    <div class="text-lg text-pink-400">
+                      <p><a rel="noopener noreferrer" href="mailto:telessthalita@outlook.com">Email</a></p>
+                    </div>
+
+                    <div class="text-lg">
+                      <a href="https://github.com/telessthalita" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    </div>
+                  </div>
+                </v-card-text>
+              </div>
+            </div>
+          </div>
         </v-col>
       </v-row>
     </v-container>
@@ -40,14 +105,52 @@
 </script>
 
 <style scoped>
-.page {
-  background: linear-gradient(to right, #131313, #1d1d3b);
-  color: white;
-  
+.card {
+  perspective: 1000px;
+  width: 100%;
+  height: 380px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
 }
 
-.text-gradient {
-  background: linear-gradient(to right, #863be9, #4e398a);
-    -webkit-text-fill-color: transparent;
+.card-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.card-front {
+  background-color: #1e1e2f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-back {
+  background-color: #29293d;
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  text-align: justify;
 }
 </style>

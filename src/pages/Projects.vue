@@ -38,7 +38,7 @@ const projects = ref([
   {
     id: 1,
     title: "MoodTunes",
-    image: "/assets/moodtunes.png",  // Caminho atualizado
+    image: "/assets/moodtunes.png",  
     fullDescription:
       "AI Chatbot that creates personalized playlists based on the user's mood.",
     link: "https://example.com/moodtunes",
@@ -46,7 +46,7 @@ const projects = ref([
   {
     id: 2,
     title: "RaceTrack",
-    image: "/assets/dreamframes.png",  // Caminho atualizado
+    image: "/assets/dreamframes.png",  
     fullDescription:
       "Front-end application consuming an API to provide real-time race stats, driver performance, and team comparisons for F1 fans.",
     link: "https://race-track.onrender.com/",
@@ -54,7 +54,7 @@ const projects = ref([
   {
     id: 3,
     title: "NeuroGallery",
-    image: "/assets/racetrack.png",  // Caminho atualizado
+    image: "/assets/racetrack.png",
     fullDescription:
       "Dynamic 3D gallery that visually evolves through human interactions and machine learning, combining generative art, gamification, and intelligent curation.",
     link: "https://example.com/dreamframes",
@@ -62,7 +62,7 @@ const projects = ref([
   {
     id: 4,
     title: "SpotifyClone",
-    image: "/assets/scopify.jpeg",  // Caminho atualizado
+    image: "/assets/scopify.jpeg",  
     fullDescription:
       "A project replicating Spotify's core functionality, including music streaming.",
     link: "https://spotify-ykmg.onrender.com/",

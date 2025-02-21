@@ -8,7 +8,6 @@
       <div class="d-none d-md-flex align-center gap-3 mr-md-8">
         <Button class="text-white" text="About" target="About" />
         <Button class="text-white" text="Projects" target="Projects" />
-        <Button class="text-white" text="Contacts" target="Contacts" />
       </div>
 
       <v-menu v-if="$vuetify.display.mdAndDown">
