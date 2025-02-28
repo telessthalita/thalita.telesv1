@@ -1,100 +1,72 @@
 <template>
-  <div class="about-page page px-8 py-16">
+  <div class="about-page">
     <v-container>
-      <v-row justify="center" align="start" class="gap-8">
-        <v-col cols="12" sm="6" md="3">
-          <div class="card">
-            <div class="card-inner">
-              <div class="card-front">
-                <v-card-text class="text-center">
-                  <h2 class="text-lg font-bold text-pink-400">Level Up in Technology</h2>
-                </v-card-text>
-              </div>
-              <div class="card-back">
-                <v-card-text class="text-justify">
-                  <p>
-                    Technology has always been my refuge—a place where I challenge myself and grow. From games to
-                    coding, I developed logic, strategy, and adaptability. Every challenge has shaped me into a
-                    problem-solver, always seeking innovative solutions
-                  </p>
-                </v-card-text>
-              </div>
-            </div>
-          </div>
-        </v-col>
+      <v-row justify="center" align="start" class="gap-6">
+        <v-row class="gap-6" style="width: 100%;">
+          <v-col cols="12" md="6">
+            <v-card class="about-card elevation-5">
+              <v-card-title class="text-gradient">My Journey</v-card-title>
+              <v-card-text class="text-body">
+                From an early age, I learned to reinvent myself and seek new ways to grow. Technology has always been my refuge and inspiration, from the games that taught me strategy to software development. My mission is to transform ideas into efficient and scalable solutions.
+              </v-card-text>
+            </v-card>
+          </v-col>
 
-        <v-col cols="12" sm="6" md="3">
-          <div class="card">
-            <div class="card-inner">
-              <div class="card-front">
-                <v-card-text class="text-center">
-                  <h2 class="text-lg font-bold text-pink-400">My Skills</h2>
-                </v-card-text>
-              </div>
-              <div class="card-back">
-                <v-card-text class="text-center">
-                  <div class="skills-grid">
-                    <div class="skill">JavaScript</div>
-                    <div class="skill">Python</div>
-                    <div class="skill">SQL</div>
-                    <div class="skill">React</div>
-                    <div class="skill">AI Fundamentals</div>
-                    <div class="skill">Agile Methodologies</div>
-                  </div>
-                </v-card-text>
-              </div>
-            </div>
-          </div>
-        </v-col>
+          <v-col cols="12" md="6">
+            <v-card class="about-card elevation-5">
+              <v-card-title class="text-gradient">My Purpose</v-card-title>
+              <v-card-text class="text-body">
+                I believe that technology is not just code, but a means to solve real problems. My goal is to build intuitive and impactful applications, combining innovation, efficiency, and collaboration.
+              </v-card-text>
+            </v-card>
+          </v-col>
+        </v-row>
 
-        <v-col cols="12" sm="6" md="3">
-          <div class="card">
-            <div class="card-inner">
-              <div class="card-front">
-                <v-card-text class="text-center">
-                  <h2 class="text-lg font-bold text-pink-400">My Purpose</h2>
-                </v-card-text>
-              </div>
-              <div class="card-back">
-                <v-card-text class="text-justify">
-                  <p>
-                    Technology has the power to transform realities.
-                    I want to continue creating innovative solutions that drive businesses forward and impact lives.
-                    Growing, learning, and building the future—one line of code at a time.
-                  </p>
-                </v-card-text>
-              </div>
-            </div>
-          </div>
-        </v-col>
+        <v-row class="gap-6" style="width: 100%;">
+          <v-col cols="12" md="6">
+            <v-card class="about-card elevation-5">
+              <v-card-title class="text-gradient">Hard Skills</v-card-title>
+              <v-card-text>
+                <v-row class="skills-grid" justify="center">
+                  <v-col v-for="skill in hardSkills" :key="skill" cols="10" sm="4" md="4">
+                    <span class="skill-text">{{ skill }}</span>
+                  </v-col>
+                </v-row>
+              </v-card-text>
+            </v-card>
+          </v-col>
 
-        <v-col cols="12" sm="6" md="3">
-          <div class="card contact-card">
-            <div class="card-inner">
-              <div class="card-front">
-                <v-card-text class="text-center">
-                  <h2 class="text-lg font-bold text-pink-400">Let's Connect!</h2>
-                </v-card-text>
-              </div>
-              <div class="card-back">
-                <v-card-text class="text-justify">
-                  <p>
-                    If you share this vision and want to exchange ideas, my DM is always open!
-                  </p>
-                  <div class="contact-info mt-4">
-                    <p> +55 (79) 99905-8123</p>
-                    <div class="text-lg text-pink-400">
-                      <p><a rel="noopener noreferrer" href="mailto:telessthalita@outlook.com">Email</a></p>
-                    </div>
+          <v-col cols="12" md="6">
+            <v-card class="about-card elevation-5">
+              <v-card-title class="text-gradient">Soft Skills</v-card-title>
+              <v-card-text>
+                <v-row class="skills-grid" justify="center">
+                  <v-col v-for="skill in softSkills" :key="skill" cols="12" sm="6" md="4">
+                    <span class="skill-text">{{ skill }}</span>
+                  </v-col>
+                </v-row>
+              </v-card-text>
+            </v-card>
+          </v-col>
+        </v-row>
 
-                    <div class="text-lg">
-                      <a href="https://github.com/telessthalita" target="_blank" rel="noopener noreferrer">GitHub</a>
-                    </div>
-                  </div>
-                </v-card-text>
+        <v-col cols="12">
+          <v-card class="about-card elevation-5 text-center">
+            <v-card-title class="text-gradient"> Let's Connect</v-card-title>
+            <v-card-text>
+              <div class="contact-icons">
+                <a href="mailto:telessthalita@outlook.com" target="_blank" class="icon-link">
+                  <v-icon>mdi-email</v-icon>
+                </a>
+                <a href="https://github.com/telessthalita" target="_blank" class="icon-link">
+                  <v-icon>mdi-github</v-icon>
+                </a>
+                <a href="https://wa.me/5579999058123?text=Hello,%20I%20would%20like%20to%20chat!" target="_blank" class="icon-link">
+                  <v-icon>mdi-whatsapp</v-icon>
+                </a>
               </div>
-            </div>
-          </div>
+            </v-card-text>
+          </v-card>
         </v-col>
       </v-row>
     </v-container>
@@ -102,55 +74,99 @@
 </template>
 
 <script setup>
+const hardSkills = [
+  'JavaScript', 'Python', 'SQL', 'React', 'Vue', 'Node.js', 'C#', 'APIs', 'Git/GitHub',
+  'Automation', 'MultiCloud (in progress)', 'DevOps (in progress)', 'Scrum', 'Generative AI'
+];
+
+const softSkills = [
+  'Proactivity', 'Teamwork', 'Resilience', 'Planning', 'Communication', 'Adaptability'
+];
 </script>
 
 <style scoped>
-.card {
-  perspective: 1000px;
-  width: 100%;
-  height: 380px;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
+.about-page {
+  background: linear-gradient(135deg, #1e1e2f, #121212);
+  padding: 40px 0;
 }
 
-.card-inner {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  transform-style: preserve-3d;
-  transition: transform 0.6s;
-}
-
-.card:hover .card-inner {
-  transform: rotateY(180deg);
-}
-
-.card-front,
-.card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
-}
-
-.card-front {
+.about-card {
   background-color: #1e1e2f;
+  color: #ffffff;
+  padding: 28px;
+  border-radius: 16px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  box-shadow: 0 6px 15px rgba(255, 255, 255, 0.1);
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
 }
 
-.card-back {
-  background-color: #29293d;
-  transform: rotateY(180deg);
+.about-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(255, 255, 255, 0.2);
+}
+
+.text-gradient {
+  background: linear-gradient(90deg, #ffffff, #cccccc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.skills-grid {
+  gap: 10px;
+}
+
+.skill-text {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 10px;
+  text-align: center;
+  padding: 10px 15px;
+  border-radius: 8px;
+  display: inline-block;
+  width: 120%;
+  text-transform: uppercase;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.skill-text:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
+}
+
+.contact-icons {
   display: flex;
   justify-content: center;
-  align-items: center;
-  padding: 16px;
-  text-align: justify;
+  gap: 12px;
+}
+
+.icon-link {
+  color: #ffffff;
+  font-size: 26px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.icon-link:hover {
+  color: #cccccc;
+  transform: scale(1.2);
+}
+
+@media (max-width: 600px) {
+  .about-card {
+    padding: 20px;
+  }
+
+  .skill-text {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  .contact-icons {
+    gap: 12px;
+  }
 }
 </style>

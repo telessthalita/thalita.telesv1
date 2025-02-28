@@ -41,7 +41,7 @@ const projects = ref([
     image: "/assets/moodtunes.png",  
     fullDescription:
       "AI Chatbot that creates personalized playlists based on the user's mood.",
-    link: "https://example.com/moodtunes",
+    link: "https://moodtunes-frontend.onrender.com/",
   },
   {
     id: 2,
@@ -51,16 +51,9 @@ const projects = ref([
       "Front-end application consuming an API to provide real-time race stats, driver performance, and team comparisons for F1 fans.",
     link: "https://race-track.onrender.com/",
   },
+ 
   {
     id: 3,
-    title: "NeuroGallery",
-    image: "/assets/racetrack.png",
-    fullDescription:
-      "Dynamic 3D gallery that visually evolves through human interactions and machine learning, combining generative art, gamification, and intelligent curation.",
-    link: "https://example.com/dreamframes",
-  },
-  {
-    id: 4,
     title: "SpotifyClone",
     image: "/assets/scopify.jpeg",  
     fullDescription:
