@@ -2,7 +2,6 @@
   <div class="projects-page page px-8 py-16">
     <v-container>
       <v-row justify="center" align="start" class="gap-8">
-        <!-- Modificando para exibir 4 projetos em uma fileira -->
         <v-col cols="12" sm="6" md="3" v-for="project in projects" :key="project.id">
           <div class="project-card">
             <div class="card-inner">
