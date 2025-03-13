@@ -40,7 +40,7 @@ const projects = ref([
     image: "/assets/moodtunes.png",  
     fullDescription:
       "AI Chatbot that creates personalized playlists based on the user's mood.",
-    link: "https://moodtunes-frontend.onrender.com/",
+    link: "https://moodtunes-xtcy.onrender.com",
   },
   {
     id: 2,
