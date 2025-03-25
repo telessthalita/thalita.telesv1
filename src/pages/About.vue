@@ -5,18 +5,21 @@
         <v-row class="gap-6" style="width: 100%;">
           <v-col cols="12" md="6">
             <v-card class="about-card elevation-5">
-              <v-card-title class="text-gradient">My Journey</v-card-title>
+              <v-card-title class="text-gradient">Meu Caminho</v-card-title>
               <v-card-text class="text-body">
-                From an early age, I learned to reinvent myself and seek new ways to grow. Technology has always been my refuge and inspiration, from the games that taught me strategy to software development. My mission is to transform ideas into efficient and scalable solutions.
+                Desde cedo, aprendi a me reinventar e buscar novas formas de crescer. A tecnologia sempre foi meu
+                refúgio e inspiração, desde os jogos que me ensinaram estratégia até o desenvolvimento de software.
+                Minha missão é transformar ideias em soluções eficientes e escaláveis.
               </v-card-text>
             </v-card>
           </v-col>
 
           <v-col cols="12" md="6">
             <v-card class="about-card elevation-5">
-              <v-card-title class="text-gradient">My Purpose</v-card-title>
+              <v-card-title class="text-gradient">Meu Propósito</v-card-title>
               <v-card-text class="text-body">
-                I believe that technology is not just code, but a means to solve real problems. My goal is to build intuitive and impactful applications, combining innovation, efficiency, and collaboration.
+                Acredito que a tecnologia não é apenas código, mas um meio para resolver problemas reais. Meu objetivo é
+                construir aplicativos intuitivos e impactantes, combinando inovação, eficiência e colaboração.
               </v-card-text>
             </v-card>
           </v-col>
@@ -52,7 +55,7 @@
 
         <v-col cols="12">
           <v-card class="about-card elevation-5 text-center">
-            <v-card-title class="text-gradient"> Let's Connect</v-card-title>
+            <v-card-title class="text-gradient"> Vamos Conectar</v-card-title>
             <v-card-text>
               <div class="contact-icons">
                 <a href="mailto:telessthalita@outlook.com" target="_blank" class="icon-link">
@@ -61,7 +64,8 @@
                 <a href="https://github.com/telessthalita" target="_blank" class="icon-link">
                   <v-icon>mdi-github</v-icon>
                 </a>
-                <a href="https://wa.me/5579999058123?text=Hello,%20I%20would%20like%20to%20chat!" target="_blank" class="icon-link">
+                <a href="https://wa.me/5579999058123?text=Olá,%20Gostaria%20de%20conversar!" target="_blank"
+                  class="icon-link">
                   <v-icon>mdi-whatsapp</v-icon>
                 </a>
               </div>
@@ -76,11 +80,11 @@
 <script setup>
 const hardSkills = [
   'JavaScript', 'Python', 'SQL', 'React', 'Vue', 'Node.js', 'C#', 'APIs', 'Git/GitHub',
-  'Automation', 'MultiCloud (in progress)', 'DevOps (in progress)', 'Scrum', 'Generative AI'
+  'Automação', 'MultiCloud (em andamento)', 'DevOps (em andamento)', 'Scrum', 'IA Generativa'
 ];
 
 const softSkills = [
-  'Proactivity', 'Teamwork', 'Resilience', 'Planning', 'Communication', 'Adaptability'
+  'Proatividade', 'Trabalho em equipe', 'Resiliência', 'Planejamento', 'Comunicação', 'Adaptabilidade'
 ];
 </script>
 

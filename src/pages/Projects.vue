@@ -17,9 +17,9 @@
                   <h2 class="text-lg font-bold text-pink-400">{{ project.title }}</h2>
                   <p>{{ project.fullDescription }}</p>
                   <v-btn text :href="project.link" target="_blank" class="mt-4">
-                    Learn More
+                    Saiba Mais
                   </v-btn>
-               </v-card-text>
+                </v-card-text>
               </div>
             </div>
           </div>
@@ -37,26 +37,26 @@ const projects = ref([
   {
     id: 1,
     title: "MoodTunes",
-    image: "/assets/moodtunes.png",  
+    image: "/assets/moodtunes.png",
     fullDescription:
-      "AI Chatbot that creates personalized playlists based on the user's mood.",
+      "Chatbot de IA que cria playlists personalizadas com base no humor do usuário.",
     link: "https://moodtunes-xtcy.onrender.com",
   },
   {
     id: 2,
     title: "RaceTrack",
-    image: "/assets/dreamframes.png",  
+    image: "/assets/dreamframes.png",
     fullDescription:
-      "Front-end application consuming an API to provide real-time race stats, driver performance, and team comparisons for F1 fans.",
+      "Aplicação front-end que consome uma API para fornecer estatísticas de corridas em tempo real, desempenho de pilotos e comparações de equipes para fãs da F1.",
     link: "https://race-track.onrender.com/",
   },
- 
+
   {
     id: 3,
     title: "SpotifyClone",
-    image: "/assets/scopify.jpeg",  
+    image: "/assets/scopify.jpeg",
     fullDescription:
-      "A project replicating Spotify's core functionality, including music streaming.",
+      "Projeto que replica as funcionalidades principais do Spotify, incluindo streaming de músicas.",
     link: "https://spotify-ykmg.onrender.com/",
   }
 ]);
