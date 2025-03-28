@@ -19,7 +19,7 @@
               <v-card-title class="text-gradient">Meu Propósito</v-card-title>
               <v-card-text class="text-body">
                 Acredito que a tecnologia não é apenas código, mas um meio para resolver problemas reais. Meu objetivo é
-                construir aplicativos intuitivos e impactantes, combinando inovação, eficiência e colaboração.
+                construir soluções inteligentes intuitivas e impactantes, combinando inovação, eficiência e colaboração.
               </v-card-text>
             </v-card>
           </v-col>
